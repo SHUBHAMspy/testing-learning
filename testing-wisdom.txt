@@ -1,0 +1,41 @@
+Happy Path
+
+A situation in which everything happens as it is supposed to, with no faults:
+The happy path is meant to describe the ideal process, without any exceptions or alternate paths.
+The happy path for getting into the system would be that the user already has an account, knows their credentials, enters them correctly, the system authenticates the user, and they can access the system.
+
+happy path is a default scenario featuring no exceptional or error conditions.
+
+Happy Testing
+
+Happy path testing is used to test the application through a positive flow to generate a default output. 
+This is generally the first form of testing to be performed on an application
+
+Many developers make the mistake of only testing happy paths, or what users are supposed to do when using an application, and neglect testing unhappy paths, or the many ways that users can break your software. 
+By doing so, they may not be prepared to properly handle errors.
+
+Happy and unhappy paths can be useful in both behavior-driven development (BDD) and test-driven development (TDD). 
+In general, BDD tests ensure that the software behaves as a user would expect and should be accessible to stakeholder. 
+TDD tests to ensure that the software functions on a technical level.
+
+Datatypes
+A datatype is a an abstraction that encapsulates a reusable coding pattern. 
+These solutions have a canonical implementation that is generalized for all possible uses.
+
+In day-to-day programming, it is fairly common to find ourselves writing functions that can fail. For instance, querying a service may result in a connection issue, or some unexpected JSON response.
+
+To communicate these errors, it has become common practice to throw exceptions; however, exceptions are not tracked in any way, shape, or form by the compiler. 
+To see what kind of exceptions (if any) a function may throw, we have to dig through the source code. Then, to handle these exceptions, we have to make sure we catch them at the call site. 
+This all becomes even more unwieldy when we try to compose exception-throwing procedures.
+
+Test Driven Development(TDD)
+
+In TDD we write the tests first before writing our production code
+
+Steps or phases of TDD
+
+1.write your test first- and obviously this will fail as there is no code to test
+2.Then write the simplest code that will pass this test
+3. Refactor your code accordingly if necessary
+
+Repeat and iterate over these steps to complete the feature
